@@ -31,11 +31,11 @@ export class FlicPluginLoader implements IPluginLoader {
   private _init() : void {
     this._logger.info('Starting Flic plugin');
 
-    const zwayConfig = (<any>this._config).zway || {};
-    const controllersConfigs = zwayConfig.controllers || [];
+    const flicConfig = (<any>this._config).flic || {};
+    const serversConfigs = flicConfig.servers || [];
 
     this._controllers = {};
-    controllersConfigs.forEach(c => {
+    serversConfigs.forEach(c => {
       this._controllers[c.id] = new FlicClient(c.id, c.host, c.port);
     });
   }
