@@ -1,6 +1,6 @@
 {
   "name": "homenet-plugin-flic",
-  "description": "Flic plugin for Homenet",
+  "description": "Flic button plugin for Homenet",
   "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {
