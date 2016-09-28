@@ -1,0 +1,1 @@
+export { FlicPluginLoader } from './loader';

@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/denwilliams/homenet-plugin-flic/issues"
   },
-  "homepage": "https://github.com/denwilliams/homenet-plugin-flic#readme"
+  "homepage": "https://github.com/denwilliams/homenet-plugin-flic#readme",
+  "dependencies": {},
+  "peerDependencies": {
+    "homenet-core": "^4.0.0-beta.3"
+  },
+  "devDependencies": {
+    "homenet-core-tsd": "^4.0.0-beta.1"
+  }
 }
