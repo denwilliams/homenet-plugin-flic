@@ -18,7 +18,6 @@ export class FlicPluginLoader implements IPluginLoader {
     this._init();
 
     buttons.addType('flic', this._createFactory());
-    // sensors.addType('zway', sensorFactory);
   }
 
   load() : void {
