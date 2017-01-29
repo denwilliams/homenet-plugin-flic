@@ -17,8 +17,7 @@
       "noImplicitReturns": true
     },
     "files": [
-      "node_modules/homenet-core-tsd/homenet-core.d.ts",
-      "typings/index.d.ts",
+      "node_modules/@homenet/core-tsd/homenet-core.d.ts",
       "src/fliclib.ts",
       "src/client.ts",
       "src/loader.ts",
