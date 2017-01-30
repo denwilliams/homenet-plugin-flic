@@ -1,4 +1,4 @@
-import { plugin, service, Dict, IPluginLoader, ILogger, IConfig, IButtonManager, IButton } from 'homenet-core';
+import { plugin, service, Dict, IPluginLoader, ILogger, IConfig, IButtonManager, IButton } from '@homenet/core';
 import { FlicClient } from './client';
 
 @plugin()

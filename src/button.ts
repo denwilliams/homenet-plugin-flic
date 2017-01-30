@@ -1,4 +1,4 @@
-import { IButton } from 'homenet-core';
+import { IButton } from '@homenet/core';
 import { EventEmitter } from 'events';
 
 export class FlicButton extends EventEmitter implements IButton {

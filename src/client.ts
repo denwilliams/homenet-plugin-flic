@@ -1,4 +1,4 @@
-import { IButton } from 'homenet-core';
+import { IButton } from '@homenet/core';
 import { EventEmitter } from 'events';
 import { FlicConnectionChannel, FlicClient as FlicLibClient } from './fliclib';
 import { FlicButton } from './button';
