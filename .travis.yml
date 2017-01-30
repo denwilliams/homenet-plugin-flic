@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '4'
+before_install:
+- rm -rf lib/
+- npm install
+- npm install -g typescript@2.1.5
+- tsc
+deploy:
+  provider: npm
+  email: work@denwilliams.net
+  on:
+    tags: true
+    repo: denwilliams/homenet-plugin-flic
+  api_key:
+    secure: MdO0CNtvJxDFTxnnEUrppN3Nonpm2Y/y3Dn44ANOmBFHz+5n6IRq8ynwNVvpRq75jGMjHQYUyWNOzflypMqNO+lR4o1b4Ma4lKAuUrB4wfqUsvEuACXLmM69ggxcTDqBXXfclh2uQUl5o2AsJsEMeHqWVsUGuAqcTmgR2SQ21UwGPaoVnAww0l/kVzN0w1K/NcKbp1spXFYIGfetRILiCXoEOjAtDF3dc9/BHJWhVF6B0fYN27W27d8ajjpVGPILSIFLbSAy+xMs2uO1PAfKvQAYJCVjEf8tjWacGK9/0zBaQ3hKdDuDFQAkra5vatpnWtxIQCkTEfCg+c7rHADQoInvlwfhkDaYApNcWyh8mFJUVMcHAMgNCrOwAgJUaCeUnuqld8lprO4Z9NXRjv0nW8jnxnGSj8OTIl7e4SDCvsXB0r9rLQ1xLeGh1QWEN5HrF8/fvaZs9iBSeXCQNiFsNEF4XKS0XC6+wFtrZsfvpVgak/ssi4SmK2STDOvgbLWGnnT4hHE1a5Xm471acN91RuitIIqGqfmjJtpKUJxeP+RJOYSENvygv3E0yyX+1dXg6yk7LhVlel082YT2jgkaz3DZvV4m06fekdcefzt3O4HH/aYZP76CvMboZOBjxhsjC4Q9/aM4GSSWssJRB1JHoF2RnGBYVKzfgsIEqVaAUbU=
