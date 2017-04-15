@@ -2,10 +2,12 @@ import { IButton } from '@homenet/core';
 import { EventEmitter } from 'events';
 
 export class FlicButton extends EventEmitter implements IButton {
-  // channel = FlicConnectionChannel
-  constructor(channel: any) {
+  constructor(private channelFactory: Function) {
     super();
+  }
 
+  updateChannel() {
+    const channel = this.channelFactory();
     channel.on('buttonSingleOrDoubleClickOrHold', (clickType, wasQueued, timeDiff) => {
       // console.log(bdAddr + " " + clickType + " " + (wasQueued ? "wasQueued" : "notQueued") + " " + timeDiff + " seconds ago");
       switch (clickType) {

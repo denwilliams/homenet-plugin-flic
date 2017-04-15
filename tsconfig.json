@@ -18,7 +18,7 @@
     },
     "files": [
       "node_modules/@homenet/core-tsd/homenet-core.d.ts",
-      "src/fliclib.ts",
+      "src/fliclib/index.ts",
       "src/client.ts",
       "src/loader.ts",
       "src/index.ts"
