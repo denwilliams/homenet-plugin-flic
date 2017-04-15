@@ -53,7 +53,7 @@ export class FlicClient extends EventEmitter {
       if (!interval) {
         interval = setInterval(() => {
           client.reconnect();
-        }, 5000);
+        }, 30000);
       }
       if (!this._online) return;
       this._online = false;

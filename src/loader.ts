@@ -35,7 +35,11 @@ export class FlicPluginLoader implements IPluginLoader {
 
     this._controllers = {};
     serversConfigs.forEach(c => {
-      this._controllers[c.id] = new FlicClient(c.id, c.host, c.port);
+      const client = new FlicClient(c.id, c.host, c.port);
+      this._controllers[c.id] = client;
+      client.on('error', (err) => {
+        this._logger.warn(`Unable to connect to Flic daemon: ${err.message}`);
+      });
     });
   }
 
