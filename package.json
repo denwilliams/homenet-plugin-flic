@@ -1,7 +1,7 @@
 {
   "name": "@homenet/plugin-flic",
   "description": "Flic button plugin for Homenet",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "scripts": {
     "test": ""
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "homenet",
+    "homenet4-plugin",
     "flic",
     "plugin"
   ],
@@ -25,5 +26,8 @@
   "devDependencies": {
     "@homenet/core-tsd": "^4.0.0-beta.8a",
     "@types/node": "^7.0.4"
+  },
+  "homenet4": {
+    "plugins": ["FlicPluginLoader"]
   }
 }
